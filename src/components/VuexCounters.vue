@@ -30,10 +30,10 @@
 export default {
   computed: {
     pageviews() {
-      return this.$store.state.pageviews;
+      return this.$store.state.interactions.pageviews;
     },
     clicks() {
-      return this.$store.state.clicks;
+      return this.$store.state.interactions.clicks;
     },
     actions() {
       return this.$store.getters.actions;

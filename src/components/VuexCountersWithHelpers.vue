@@ -32,8 +32,8 @@ import { mapState, mapGetters, mapMutations } from 'vuex';
 export default {
   computed: {
     ...mapState({
-      pageviews: state => state.pageviews,
-      clicks: state => state.clicks,
+      pageviews: state => state.interactions.pageviews,
+      clicks: state => state.interactions.clicks,
     }),
     ...mapGetters({
       actions: 'actions'
